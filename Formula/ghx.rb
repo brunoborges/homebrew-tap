@@ -7,20 +7,20 @@ class Ghx < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/brunoborges/ghx/releases/download/v0.0.2/ghx-darwin-arm64.tar.gz"
-      sha256 "eaac2a8b486740ebdd22fb88bf0dbba5cb399993e2113b79e30b0e7f0b24cb91"
+      sha256 "aabc888ec2dbd632563a80b0b06457ae7d441228d33043ed2e8b924e109eb5a3"
     else
       url "https://github.com/brunoborges/ghx/releases/download/v0.0.2/ghx-darwin-amd64.tar.gz"
-      sha256 "e6c45e1e5e09ae7e6b1e7fd814e40095c98cd548ada733a14e24d9b3ea68dfef"
+      sha256 "edc876cad0f104ce697dc8dd9aaabef8a484eeda4101bb4ed8e5f6cd5f4780ef"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/brunoborges/ghx/releases/download/v0.0.2/ghx-linux-arm64.tar.gz"
-      sha256 "a9eddb87a004aac6afe16fb00826aaa7c69e9aa3d91676c0a7ab87446faebac8"
+      sha256 "a449bfe4e8786d2586181dadbe025f70d41994ee28919430625ae8b36791bd69"
     else
       url "https://github.com/brunoborges/ghx/releases/download/v0.0.2/ghx-linux-amd64.tar.gz"
-      sha256 "163846c4bfd0e5efb6e0c8ef095e30ebb1f4ab2ad79997807ac2fe2fe491c28d"
+      sha256 "c587e7fe9f22747199b42b232fd07ad9303772a2ce791adaff218af7e912b171"
     end
   end
 
