@@ -1,26 +1,26 @@
 class Ghcd < Formula
   desc "GitHub CLI Cache Proxy — caching daemon for gh to prevent API rate limiting"
   homepage "https://github.com/brunoborges/ghcd"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.0/ghcd-darwin-arm64.tar.gz"
-      sha256 "af6e4ddcb8495c371e1f1572b098a2c674d73fcc4637de1fdc5d6a237959e836"
+      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.1/ghcd-darwin-arm64.tar.gz"
+      sha256 "ae4020da3adbd49789371f8fd1271c0b08b81c2169d519a74f0719a14de7d047"
     else
-      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.0/ghcd-darwin-amd64.tar.gz"
-      sha256 "255594cfd3a6a08dda5e552daf800dc4c0a2876d2b26347eea8a65867a235c8f"
+      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.1/ghcd-darwin-amd64.tar.gz"
+      sha256 "5f513937e36b0455c0b8b09a53b59aa213a4cb6ba4d2513524b5c6c51cf2835a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.0/ghcd-linux-arm64.tar.gz"
-      sha256 "b4d9e27b7cc39098ed9e9e38c0a0c84c9d92160a1f3bc3839cca23da61fc2827"
+      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.1/ghcd-linux-arm64.tar.gz"
+      sha256 "88242bbeed03a5a67a9bfb6ce27115404fc91122d28ecc9c67a842c6e074d248"
     else
-      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.0/ghcd-linux-amd64.tar.gz"
-      sha256 "7d5a9326454567125a965253efe6e8c0f3430613b9af5fd1e55cdce1925ac74c"
+      url "https://github.com/brunoborges/ghcd/releases/download/v1.0.1/ghcd-linux-amd64.tar.gz"
+      sha256 "5635542a0af140d6b2f39fd879a95802ef3466d9c8da2fa3317221bc0647086b"
     end
   end
 
