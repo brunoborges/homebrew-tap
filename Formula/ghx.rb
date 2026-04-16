@@ -27,18 +27,14 @@ class Ghx < Formula
   def install
     bin.install "ghx"
     bin.install "ghxd"
-  end
 
-  def post_install
-    # Only install gh shim if no real gh binary is available on the system
-    return if system("sh", "-c", "command -v gh >/dev/null 2>&1")
-
-    (bin/"gh").write <<~SH
-      #!/bin/sh
-      # ghx-shim: this script redirects gh commands through ghx for caching
-      exec ghx ""
-    SH
-    (bin/"gh").chmod 0755
+    # Install the packaged gh shim unless a real (non-shim) gh CLI exists
+    real_gh = ENV.fetch("PATH", "").split(File::PATH_SEPARATOR).any? do |dir|
+      p = File.join(dir, "gh")
+      next unless File.executable?(p)
+      !(File.binread(p, 512).include?("ghx-shim") rescue false)
+    end
+    bin.install "gh" unless real_gh
   end
 
   def caveats
@@ -48,7 +44,6 @@ class Ghx < Formula
 
       If no 'gh' binary was found during installation, a lightweight
       shim was installed that routes 'gh' calls through ghx.
-      The real GitHub CLI will be auto-downloaded on first use.
     EOS
   end
 
