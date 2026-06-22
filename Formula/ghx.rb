@@ -1,26 +1,26 @@
 class Ghx < Formula
   desc "GitHub CLI Cache Proxy — caching daemon for gh to prevent API rate limiting"
   homepage "https://github.com/brunoborges/ghx"
-  version "1.5.2"
+  version "1.5.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoborges/ghx/releases/download/v1.5.2/ghx-darwin-arm64.tar.gz"
-      sha256 "36f7a193f88bf370ae36aaccdaddb30a7facf4f29f11f04a017262d5d44f7a08"
+      url "https://github.com/brunoborges/ghx/releases/download/v1.5.3/ghx-darwin-arm64.tar.gz"
+      sha256 "4bd0a90f3d549048a00947d9f30490ba207629e7491a793313487d4af25285c0"
     else
-      url "https://github.com/brunoborges/ghx/releases/download/v1.5.2/ghx-darwin-amd64.tar.gz"
-      sha256 "afd94a9e2b0cc678cbcadcd299e169944cb945b9d38c2b5104c6ae7805f306c5"
+      url "https://github.com/brunoborges/ghx/releases/download/v1.5.3/ghx-darwin-amd64.tar.gz"
+      sha256 "e442a134ba69ccb133c6a64cc54171638dca39e47fe2fc999bd8b1c56bf1a1b6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/brunoborges/ghx/releases/download/v1.5.2/ghx-linux-arm64.tar.gz"
-      sha256 "6ad8300f47a0a18b2dfd66671394fd4565157cc556fad44d4e90ff3e447cfa99"
+      url "https://github.com/brunoborges/ghx/releases/download/v1.5.3/ghx-linux-arm64.tar.gz"
+      sha256 "8a3c2f77ba2dc616103c898359cbfdcc4e5ee9273e9b1e287f39d136d81a0dd4"
     else
-      url "https://github.com/brunoborges/ghx/releases/download/v1.5.2/ghx-linux-amd64.tar.gz"
-      sha256 "9b3e5eb7b7358a3cf51170dd63dfeb154e916ea04114b21b7d685830071d6433"
+      url "https://github.com/brunoborges/ghx/releases/download/v1.5.3/ghx-linux-amd64.tar.gz"
+      sha256 "a76bb579542750aba3b2c3cc6770b4fffbcc52d4e43b80fa4b2476bc1346bedd"
     end
   end
 
