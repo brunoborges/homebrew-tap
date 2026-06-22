@@ -6,11 +6,11 @@ Custom Homebrew formulas by [@brunoborges](https://github.com/brunoborges).
 
 ```bash
 brew tap brunoborges/tap
-brew install ghcd
+brew install ghx
 ```
 
 ## Available Formulas
 
 | Formula | Description |
 |---------|-------------|
-| [ghcd](https://github.com/brunoborges/ghcd) | GitHub CLI Cache Proxy |
+| [ghx](https://github.com/brunoborges/ghx) | GitHub CLI Cache Proxy |
